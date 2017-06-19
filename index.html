@@ -46,24 +46,30 @@
 			</div>
 		</div>
 	</section>
-	<section class="formulario">
+	<section class="formulario" >
 		<div class="container" id="caja">
 			<div class="row">
 				<div class="col-md-offset-3 col-md-6">
 					<form Name="formulario">
 						<h3>Nombre</h3>
-						<input type="text" id="clave">
+						<input type="text" id="nombre" class="form-control" placeholder="Mi nombre es ...">
 						<h3>Comentario</h3>
-						<textarea id="valor"></textarea>
+						<textarea name="comentario" id="valor" cols="30" rows="10" placeholder="Comento que ..."></textarea>
+						<!-- Boton agrega comentarios -->
+						<button type="button" class="btn btn-primary" onclick="agregaPosteo()" value="Agregar">Agregar</button>
+						<button type="button" class="btn btn-primary" onclick="limpiaComentarios()" value="Limpiar Comentarios">Limpiar</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- Acá va el posteo del usuario -->
 	<section class="container">
 		<div class="row">
 			<div class="col-md-offset-3 col-md-6">
-				<div id="ale"></div>
+				<div class="text-left" id="contenedor-posteos">
+
+				</div>
 			</div>
 		</div>
 	</section>
@@ -74,6 +80,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
