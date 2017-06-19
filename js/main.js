@@ -62,6 +62,12 @@ function limpiaComentarios(){
   document.getElementById('contenedorPosteos').innerHTML = "Se a limpiado la vista previa de los comentarios";
 }
 
+/*Carousel Function*/
+$(document).ready(function() {
+    $('#Carousel').carousel({
+        interval: 5000
+    })
+});
 
 
 /* Intentos
