@@ -4,6 +4,16 @@ function agregaPosteo() {
 	var containerPosteos = document.getElementById('contenedorPosteos');
 	var nombreFF = document.getElementById('nombre').value;
 	var contenidoFF = document.getElementById('valor').value;
+  sessionStorage.setItem(nombre, valor);
+
+  /*
+  // Recorremos con for nuestro sessionStorage donde con getItem decimos que nos recupere los datos guardados anteriormente.
+  for(var i = 0; i < sessionStorage.length; i++){
+    sessionStorage.key(i);
+    sessionStorage.getItem(nombre, valor);
+    document.getElementById('contenedorPosteos').innerHTML = "Nombre : " + nombreFF + "<br/> Comentario: " + contenidoFF;
+  }
+  */
 
 	var nuevoPost = document.createElement('div');
 
@@ -34,7 +44,6 @@ function agregaPosteo() {
 	nuevoPost.appendChild(parrafCorazon);
 	nuevoPost.appendChild(separacion);
 
-
 	i.addEventListener('click', function(){
 		i.classList.toggle('rojo');
 	});
@@ -45,6 +54,7 @@ function agregaPosteo() {
 
 	document.getElementById('nombre').value = '';
 	document.getElementById('valor').value = '';
+
 }
 
 // Funcion que limpia los comentarios
@@ -52,7 +62,28 @@ function limpiaComentarios(){
   document.getElementById('contenedorPosteos').innerHTML = "Se a limpiado la vista previa de los comentarios";
 }
 
-function borrarTodo(){
-  sessionStorage.clear();
-  recoverData();
+
+
+/* Intentos
+
+function guardar(){
+  //Captura de datos escrito en los inputs
+  var nom = document.getElementById("nombre").value;
+  var apel = document.getElementById("valor").value;
+  //Guardando los datos en el LocalStorage
+  localStorage.setItem("Mi nombre es ...", nombreFF);
+  localStorage.setItem("Comento que ...", contenidoFF);
+  //Limpiando los campos o inputs
+  document.getElementById("nombre").value = "";
+  document.getElementById("valor").value = "";
 }
+
+function mostrar(){
+  //Obtener datos almacenados
+  var nombree = localStorage.getItem("Mi nombre es ...");
+  var coment = localStorage.getItem("Comento que ...");
+  //Mostrar datos almacenados
+  document.getElementById("nombree").innerHTML = nombree;
+  document.getElementById("coment").innerHTML = coment;
+}
+*/
