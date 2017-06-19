@@ -1,6 +1,5 @@
 body {
-  background-color: white;
-  color:black;
+  background-color: #B4D2D9;
 }
 
 header {
@@ -12,8 +11,8 @@ img {
 }
 
 a {
-  text-decoration: underline;
-  color: green;
+  text-decoration: none;
+  color: #777A8C;
   margin-bottom: 30px;
 }
 
@@ -21,8 +20,9 @@ a {
   height: 100px;
 }
 h1, p{
-  color: DeepPink ;
+  color: #17736D;
 }
+
 h1{
   font-size: 50px;
   font-weight: bolder;
@@ -31,33 +31,61 @@ h1{
 textarea, input{
   width: 100%;
   border-radius: 0px;
-  border: 1px solid DeepPink;
+  border: 1px solid #F0F0F2;
   margin-bottom: 20px;
 }
 
 .posteo {
-  color: DeepPink;
+  color: #777A8C;
 }
 .posteo strong{
   display: block;
 }
 .posteo hr {
-  border: 1px solid DeepPink;
+  border: 1px solid #17736D;
 }
 /* PARA CORAZON */
 .corazon {
   font-size: 40px;
-  color: gray;
+  color: #72A1A6;
   text-align: center;
 }
 .rojo {
-  color: red;
+  color: #777A8C;
 }
 footer{
   padding: 10px;
 }
 
+/*botones*/
+.botonsito{
+  background: #72A1A6;
+  color: #17736D;
+  border: none;
 
+}
 
+.botonsito:hover{
+  background-color: #777A8C;
+  color: #F0F0F2;
+}
+
+/*inputs*/
+*[placeholder] {
+   color: #72A1A6 !important;
+}
+
+/*Titulos*/
+h3{
+  color: #17736D;
+}
+
+/*fotos*/
+.port-image{
+    width: 100%;
+}
+
+.gallery_product{
+    margin-bottom: 30px;
+}
 /* Estilos comentarios */
-
